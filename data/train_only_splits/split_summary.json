@@ -1,0 +1,26 @@
+{
+  "protocol": "duplicate-aware train-only augmentation",
+  "seed": 42,
+  "test_size": 0.1,
+  "val_size": 0.1,
+  "goemotions_unique_rows": 57677,
+  "goemotions_train_rows": 46213,
+  "goemotions_val_rows": 5730,
+  "goemotions_test_rows": 5734,
+  "sentiment140_unique_rows": 592593,
+  "gpt4mini_unique_rows": 15965,
+  "added_rows_before_val_test_filter": 608558,
+  "added_rows_after_val_test_filter": 607679,
+  "train_candidate_rows": 646031,
+  "balanced_train_rows": 189945,
+  "balanced_train_unique_texts": 189945,
+  "val_unique_texts": 5730,
+  "test_unique_texts": 5734,
+  "overlap_train_val_normalized_texts": 0,
+  "overlap_train_test_normalized_texts": 0,
+  "caps": {
+    "default": 9000,
+    "neutral": 20000,
+    "annoyance": 15000
+  }
+}

@@ -20,12 +20,18 @@ env/
 *.swo
 
 # 模型权重与训练产物（太大，不适合 git）
-outputs/
+outputs/*
+!outputs/*/
+outputs/*/*
 *.bin
 *.pt
 *.pth
 *.safetensors
 *.gguf
+# 但保留轻量指标产物（可复现结果、几十 KB），便于远端查阅历史指标
+!outputs/*/summary.json
+!outputs/*/thresholds_opt.csv
+!outputs/*/per_label_metrics_*.csv
 
 # 缓存
 .cache/
